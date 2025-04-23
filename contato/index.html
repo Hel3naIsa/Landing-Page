@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Contato</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4d0da;
+        }
+
+        h1 {
+            color: black;
+        }
+        .formulario {
+            background-color: #cacdd2;
+            padding: 30px;
+            border-radius: 40px;
+            width: 50%
+        }
+        .campo {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <table class="tabela-centralizada" border="1">
+
+    <h1>Entre em Contato</h1>
+    
+    <div class="formulario">
+        <form>
+          
+            <div class="campo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            </div>
+            
+           
+            <div class="campo">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Seu número">
+            </div>
+            
+           
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="@">
+            </div>
+            
+        
+            <div class="campo">
+                <label>Tipo:</label>
+                <input type="radio" id="fisica" name="tipo" value="fisica" checked>
+                <label for="fisica" style="display: inline;">Pessoa Física</label>
+                
+                <input type="radio" id="juridica" name="tipo" value="juridica">
+                <label for="juridica" style="display: inline;">Pessoa Jurídica</label>
+            </div>
+            
+            
+            <div class="campo">
+                <label for="horario">Melhor horário para contato:</label>
+                <select id="horario" name="horario">
+                    <option value="">Selecione...</option>
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+            </div>
+            
+           
+            <div class="campo">
+                <label>Serviço desejado:</label>
+                <input type="checkbox" id="servico1" name="servico" value="estatica">
+                <label for="servico1" style="display: inline;">Página Estática</label><br>
+                
+                <input type="checkbox" id="servico2" name="servico" value="dinamica">
+                <label for="servico2" style="display: inline;">Página Dinâmica</label><br>
+                
+                <input type="checkbox" id="servico3" name="servico" value="avancada">
+                <label for="servico3" style="display: inline;">Página Avançada</label>
+            </div>
+            
+           
+            <div class="campo">
+                <label for="descricao">Descreva o que você precisa:</label>
+                <textarea id="descricao" name="descricao" rows="4"></textarea>
+            </div>
+            
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </div>
+</body>
+</html>
